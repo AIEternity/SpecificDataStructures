@@ -5,12 +5,12 @@ Specific data structures
 ```
  PM> Install-Package SpecificDataStructures 
 ```
-## OverwritedFixedList
+## FixedList
 ### Description
 Fixed-size collection that, once the size limit has been reached, replaces the oldest record whenever a new one is added
 ### Example
 ```csharp
-OverwritedFixedList<int> lst = new OverwritedFixedList<int>(3);
+FixedList<int> lst = new OverwritedFixedList<int>(3);
 lst.Add(0);
 lst.Add(1);
 lst.Add(2);
