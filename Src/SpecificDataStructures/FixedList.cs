@@ -8,14 +8,14 @@ namespace SpecificDataStructures
     /// fixed-size collection that, once the size limit has been reached, replaces the oldest record whenever a new one is added
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public class OverwritedFixedList<T> : IEnumerable<T>
+    public class FixedList<T> : IEnumerable<T>
     {
         private readonly T[] _stoarage;
         private readonly int _maxSize;
         private int _length;
         private int _finishIndex = -1;
 
-        public OverwritedFixedList(int size)
+        public FixedList(int size)
         {
             _stoarage = new T[size];
             _maxSize = size;

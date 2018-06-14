@@ -14,7 +14,8 @@
   </ItemGroup>
 
   <ItemGroup>    
-    <ProjectReference Include="..\Src\SpecificDataStructures.csproj" />
+    <ProjectReference Include="..\..\Src\SpecificDataStructures\SpecificDataStructures.csproj" />    
+    
   </ItemGroup>
 
 </Project>

@@ -5,14 +5,14 @@ using Xunit;
 
 namespace SpecificDataStructuresUnitTest
 {
-    public class OverwritedFixedListTest
+    public class FixedListTest
     {
         private const int Size = 5;
 
         [Fact]
         public void AddTest()
         {
-            OverwritedFixedList<int> lst = new OverwritedFixedList<int>(Size);
+            FixedList<int> lst = new FixedList<int>(Size);
             Assert.Equal(0, lst.Length);
             for (int i = 1; i <= Size; i++)
                 lst.Add(i);
@@ -27,7 +27,7 @@ namespace SpecificDataStructuresUnitTest
         [Fact]
         public void ClearTest()
         {
-            OverwritedFixedList<int> lst = new OverwritedFixedList<int>(Size);
+            FixedList<int> lst = new FixedList<int>(Size);
             Assert.Equal(0, lst.Length);
             for (int i = 1; i <= Size; i++)
                 lst.Add(i);
@@ -41,7 +41,7 @@ namespace SpecificDataStructuresUnitTest
         [Fact]
         public void GetExceptionTest()
         {
-            OverwritedFixedList<int> lst = new OverwritedFixedList<int>(5);
+            FixedList<int> lst = new FixedList<int>(5);
             Assert.Throws<IndexOutOfRangeException>(() => lst[0]);
             lst.Add(0);
             Assert.Equal(0, lst[0]);
