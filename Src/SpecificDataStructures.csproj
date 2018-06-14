@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	<PackageId>SpecificDataStructures</PackageId>
+	<Version>1.0.0</Version>
+	<Authors>AIEternity</Authors>
+	<Company>AIEternity</Company>
+  </PropertyGroup>
+
+</Project>
