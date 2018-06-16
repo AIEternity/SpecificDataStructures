@@ -33,9 +33,7 @@ namespace SpecificDataStructures
             }
         }
 
-        public int Length => _length;
-
-
+        public int Count => _length;
         public void Add(T item)
         {
             _finishIndex = (_finishIndex + 1) % _maxSize;
@@ -65,5 +63,7 @@ namespace SpecificDataStructures
             int startIndex = _length < _maxSize ? 0 : (_finishIndex + 1) % _maxSize;
             return (startIndex + index) % _maxSize;
         }
+
+        
     }
 }

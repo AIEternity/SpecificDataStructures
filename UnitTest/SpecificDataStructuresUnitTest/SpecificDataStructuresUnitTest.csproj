@@ -4,6 +4,14 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
 
     <IsPackable>false</IsPackable>
+
+    <Version>1.0.1</Version>
+
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+
+    <PackageProjectUrl></PackageProjectUrl>
+
+    <RepositoryUrl></RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>

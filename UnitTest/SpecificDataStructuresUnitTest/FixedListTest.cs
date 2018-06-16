@@ -13,7 +13,7 @@ namespace SpecificDataStructuresUnitTest
         public void AddTest()
         {
             FixedList<int> lst = new FixedList<int>(Size);
-            Assert.Equal(0, lst.Length);
+            Assert.Equal(0, lst.Count);
             for (int i = 1; i <= Size; i++)
                 lst.Add(i);
 
@@ -28,14 +28,14 @@ namespace SpecificDataStructuresUnitTest
         public void ClearTest()
         {
             FixedList<int> lst = new FixedList<int>(Size);
-            Assert.Equal(0, lst.Length);
+            Assert.Equal(0, lst.Count);
             for (int i = 1; i <= Size; i++)
                 lst.Add(i);
             var expected = Enumerable.Range(1, 3 * Size);
             Assert.True(lst.SequenceEqual(expected.Skip(0).Take(Size)));
             lst.Clear();
             Assert.True(lst.SequenceEqual(new int[0]));
-            Assert.Equal(0, lst.Length);
+            Assert.Equal(0, lst.Count);
             Assert.Throws<IndexOutOfRangeException>(() => lst[0]);
         }
         [Fact]

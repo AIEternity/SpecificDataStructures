@@ -1,12 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
 	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 	<PackageId>SpecificDataStructures</PackageId>
-	<Version>1.0.0</Version>
+	<Version>1.0.2</Version>
 	<Authors>AIEternity</Authors>
 	<Company>AIEternity</Company>
+	<RepositoryUrl>https://github.com/AIEternity/SpecificDataStructures/</RepositoryUrl>
   </PropertyGroup>
 
 </Project>
